@@ -1,0 +1,183 @@
+/* COLORS */
+:root {
+  --coral: #333333;
+  --cream: #fff8f0;
+  --beige: #fdf6f0;
+  --charcoal: #333333;
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--cream);
+}
+.navbar-nav .nav-link {
+  color: var(--charcoal);
+  font-weight: 500;
+  transition: 0.3s;
+}
+.navbar-nav .nav-link:hover {
+  color: blue;
+}
+
+/* Hero Section */
+.hero-section {
+  height: 50vh;
+  background: linear-gradient(blue), url('../images/hero-bg.avif') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+.btn-hero {
+  background-color: #fff;
+  color: var(--coral);
+  font-weight: bold;
+  padding: 0.8rem 2rem;
+  transition: 0.3s;
+}
+.btn-hero:hover {
+  background-color: var(--coral);
+  color: #fff;
+}
+
+/* Recipe Cards */
+.recipe-card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.recipe-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+/* Category Cards */
+.category-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+/* Section backgrounds */
+.bg-beige {
+  background-color: var(--beige);
+}
+
+/* Footer */
+footer {
+  background-color: var(--charcoal);
+  color: #fff;
+}
+footer a {
+  color: var(--coral);
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* ======================= */
+/* Recipe Page Styling */
+/* ======================= */
+
+/* General container spacing */
+main, section {
+  padding: 5rem 0;
+}
+
+/* Recipe images */
+main img, section img {
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  max-width: 100%;
+  transition: transform 0.3s ease;
+}
+main img:hover, section img:hover {
+  transform: scale(1.02);
+}
+
+/* Recipe Titles */
+h1, h2 {
+  color: #ff6f61; /* Coral */
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+h4, h5 {
+  color: #333;
+  font-weight: 600;
+  margin-top: 2rem;
+}
+
+/* Ingredients and Instructions Lists */
+ul, ol {
+  margin-left: 1.5rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+ul li::marker {
+  color: #ff6f61; /* coral bullets */
+  font-weight: bold;
+}
+ol li::marker {
+  color: #ff6f61;
+  font-weight: bold;
+}
+
+/* Tips / Notes */
+p strong {
+  color: #ff6f61;
+  font-weight: 600;
+}
+
+/* Layout adjustments for two-column recipe sections */
+.row.g-5 {
+  align-items: center;
+}
+
+/* Make images responsive and centered */
+.col-md-6 img {
+  display: block;
+  margin: 0 auto;
+}
+
+/* Border-top between sections */
+section.border-top {
+  border-top: 2px solid #f0f0f0;
+  padding-top: 4rem;
+}
+
+/* Text styling */
+p.text-muted {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Optional: subtle background for ingredients/instructions */
+ul, ol {
+  background-color: #fff8f0;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+/* Headings hover effect (optional for interaction) */
+h1:hover, h2:hover {
+  color: #ff856f;
+  transition: color 0.3s ease;
+}
+
+/* Mobile responsiveness tweaks */
+@media (max-width: 768px) {
+  main, section {
+    padding: 3rem 1rem;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+}
