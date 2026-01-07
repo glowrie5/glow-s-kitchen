@@ -1,0 +1,222 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dessert Menu - Glow's Kitchen</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light shadow-sm py-3">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Glow's Kitchen</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="breakfast.html">Breakfast</a></li>
+          <li class="nav-item"><a class="nav-link" href="lunch.html">Lunch</a></li>
+          <li class="nav-item"><a class="nav-link" href="dinner.html">Dinner</a></li>
+          <li class="nav-item"><a class="nav-link active" href="dessert.html">Dessert</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="category-hero py-5 text-white">
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb bg-transparent p-0 mb-2">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Dessert</li>
+        </ol>
+      </nav>
+      <div class="d-flex align-items-center justify-content-between">
+        <div>
+          <h1 class="fw-bold">Desserts</h1>
+          <p class="lead mb-0">Sweet treats to finish your meal.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="container py-3">
+    <div id="recipeGridDessert" class="row g-4">
+
+      <!-- Chocolate Cake -->
+      <article class="col-md-4 recipe-item" id="chocolatecake" data-tags="bakes">
+        <div class="card shadow-sm">
+          <img src="images/Chocolate Cake.avif" class="card-img-top" alt="Chocolate Cake">
+          <div class="card-body text-center">
+            <h5 class="card-title">Chocolate Cake</h5>
+            <p class="card-text small text-muted">Prep: 20 mins | Cook: 35 mins</p>
+            <a href="#chocolatecake" class="stretched-link" data-bs-toggle="modal" data-bs-target="#chocolateModal">View Recipe</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Ice Cream -->
+      <article class="col-md-4 recipe-item" data-tags="no-bake quick">
+        <div class="card shadow-sm">
+          <img src="images/Vanilla Ice Cream.avif" class="card-img-top" alt="Ice Cream">
+          <div class="card-body text-center">
+            <h5 class="card-title">Vanilla Ice Cream</h5>
+            <p class="card-text small text-muted">Prep: 15 mins | Freeze: 4 hrs</p>
+            <a href="#icecream" class="stretched-link" data-bs-toggle="modal" data-bs-target="#iceCreamModal">View Recipe</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Cookies -->
+      <article class="col-md-4 recipe-item" data-tags="bakes quick">
+        <div class="card shadow-sm">
+          <img src="images/classic cookies.avif" class="card-img-top" alt="Cookies">
+          <div class="card-body text-center">
+            <h5 class="card-title">Classic Cookies</h5>
+            <p class="card-text small text-muted">Prep: 15 mins | Cook: 12 mins</p>
+            <a href="#cookies" class="stretched-link" data-bs-toggle="modal" data-bs-target="#cookiesModal">View Recipe</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- Dessert Modals -->
+  <div class="modal fade" id="chocolateModal" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Chocolate Cake</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="images/Chocolate Cake.avif" class="img-fluid mb-3 rounded shadow" style="max-width:480px;">
+          <h4>Chocolate Cake</h4>
+              
+          <h6>Ingredients:</h6>
+        <ul>
+          <li>1 3/4 cups all-purpose flour</li>
+          <li>2 cups sugar</li>
+          <li>3/4 cup cocoa powder</li>
+          <li>1 1/2 tsp baking powder</li>
+          <li>1 1/2 tsp baking soda</li>
+          <li>1 tsp salt</li>
+          <li>2 eggs</li>
+          <li>1 cup milk</li>
+          <li>1/2 cup vegetable oil</li>
+          <li>2 tsp vanilla extract</li>
+          <li>1 cup boiling water</li>
+        </ul>
+
+        <h6>Instructions:</h6>
+        <ol>
+          <li>Preheat oven to 180°C (350°F). Grease and flour a 9-inch cake pan.</li>
+          <li>In a large bowl, combine flour, sugar, cocoa, baking powder, baking soda, and salt.</li>
+          <li>Add eggs, milk, oil, and vanilla. Beat for 2 minutes on medium speed.</li>
+          <li>Stir in boiling water (batter will be thin).</li>
+          <li>Pour batter into prepared pan and bake for 30–35 minutes.</li>
+          <li>Check doneness with a toothpick; it should come out clean.</li>
+          <li>Cool for 10 minutes, then remove from pan and let it cool completely before frosting.</li>
+        </ol>
+
+        <p class="mt-3"><strong>Tip:</strong> Frost with chocolate ganache or buttercream for extra indulgence!</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="modal fade" id="iceCreamModal" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Vanilla Ice Cream</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="images/bowl of Vanilla Ice Cream.webp" class="img-fluid mb-3 rounded shadow" style="max-width:420px;">
+          <h4>Vanilla Ice Cream</h4>
+        
+          <h6>Ingredients:</h6>
+        <ul>
+          <li>2 cups heavy cream</li>
+          <li>1 cup whole milk</li>
+          <li>3/4 cup sugar</li>
+          <li>1 tbsp pure vanilla extract</li>
+          <li>Pinch of salt</li>
+        </ul>
+
+        <h6>Instructions:</h6>
+        <ol>
+          <li>In a mixing bowl, whisk together sugar, milk, and salt until sugar dissolves.</li>
+          <li>Stir in heavy cream and vanilla extract.</li>
+          <li>Pour the mixture into an ice cream maker and churn according to manufacturer’s instructions (about 20–25 minutes).</li>
+          <li>Transfer ice cream to a freezer-safe container and freeze for at least 4 hours until firm.</li>
+          <li>Serve in bowls or cones and enjoy!</li>
+        </ol>
+
+        <p class="mt-3"><strong>Tip:</strong> Add chocolate chips, nuts, or fruit for a fun twist!</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="modal fade" id="cookiesModal" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Classic Cookies</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="images/classic cookies.avif" class="img-fluid mb-3 rounded shadow" style="max-width:420px;">
+          <h4>Classic Cookies</h4>
+        
+        <h6>Ingredients:</h6>
+        <ul>
+          <li>1 cup unsalted butter, softened</li>
+          <li>1 cup brown sugar</li>
+          <li>1/2 cup granulated sugar</li>
+          <li>2 eggs</li>
+          <li>2 tsp vanilla extract</li>
+          <li>2 1/2 cups all-purpose flour</li>
+          <li>1 tsp baking soda</li>
+          <li>1/2 tsp salt</li>
+          <li>2 cups chocolate chips</li>
+        </ul>
+
+        <h6>Instructions:</h6>
+        <ol>
+          <li>Preheat oven to 175°C (350°F) and line a baking sheet with parchment paper.</li>
+          <li>Cream together butter, brown sugar, and granulated sugar until fluffy.</li>
+          <li>Add eggs and vanilla extract, mix well.</li>
+          <li>In a separate bowl, whisk together flour, baking soda, and salt.</li>
+          <li>Gradually add dry ingredients to wet ingredients and mix until combined.</li>
+          <li>Fold in chocolate chips.</li>
+          <li>Drop spoonfuls of dough onto prepared baking sheet, spacing about 2 inches apart.</li>
+          <li>Bake for 10–12 minutes until edges are golden but centers are soft.</li>
+          <li>Cool on baking sheet for 5 minutes, then transfer to wire rack to cool completely.</li>
+        </ol>
+
+        <p class="mt-3"><strong>Tip:</strong> For chewier cookies, slightly underbake and let them cool on the tray.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <footer class="bg-charcoal text-white text-center py-4 mt-4">
+    <div class="container">
+      <p class="mb-0">&copy; 2025 Glow's Kitchen</p>
+    </div>
+  </footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="scripts/category.js"></script>
+</body>
+</html>

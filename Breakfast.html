@@ -1,0 +1,224 @@
+
+
+<!-- FILE: breakfast.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Breakfast Menu - Glow's Kitchen</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light shadow-sm py-3">
+<div class="container">
+<a class="navbar-brand fw-bold" href="index.html">Glow's Kitchen</a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navMenu">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+<li class="nav-item"><a class="nav-link active" href="breakfast.html">Breakfast</a></li>
+<li class="nav-item"><a class="nav-link" href="lunch.html">Lunch</a></li>
+<li class="nav-item"><a class="nav-link" href="dinner.html">Dinner</a></li>
+<li class="nav-item"><a class="nav-link" href="dessert.html">Dessert</a></li>
+</ul>
+</div>
+</div>
+</nav>
+
+
+<!-- Breadcrumb + Hero -->
+<section class="category-hero py-5 text-white">
+<div class="container">
+<nav aria-label="breadcrumb">
+<ol class="breadcrumb bg-transparent p-0 mb-2">
+<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+<li class="breadcrumb-item active" aria-current="page">Breakfast</li>
+</ol>
+</nav>
+<div class="d-flex align-items-center justify-content-between">
+<div>
+<h1 class="fw-bold">Breakfast</h1>
+<p class="lead mb-0">Start your day with a tasty, energizing meal.</p>
+</div>
+<div class="hero-badge text-end">
+<small>Category</small>
+</div>
+</div>
+</div>
+</section>
+
+
+
+<!-- Recipe Grid -->
+<section class="container py-3">
+<div id="recipeGrid" class="row g-4">
+
+
+<!-- Pancakes -->
+<article class="col-md-4 recipe-item" data-tags="quick easy">
+<div class="card shadow-sm">
+<img src="images/pancake.avif" class="card-img-top" alt="Fluffy Pancakes">
+<div class="card-body text-center">
+<h5 class="card-title">Fluffy Pancakes</h5>
+<p class="card-text small text-muted">Prep: 10 mins | Cook: 15 mins</p>
+<a href="#pancakes" class="stretched-link" data-bs-toggle="modal" data-bs-target="#pancakeModal">View Recipe</a>
+</div>
+</div>
+</article>
+
+
+
+<!-- Avocado Toast -->
+<article class="col-md-4 recipe-item" data-tags="quick healthy">
+<div class="card shadow-sm">
+<img src="images/avocado toast - Copy.avif" class="card-img-top" alt="Avocado Toast">
+<div class="card-body text-center">
+<h5 class="card-title">Avocado Toast</h5>
+<p class="card-text small text-muted">Prep: 5 mins | Cook: 0 mins</p>
+<a href="#avocadotoast" class="stretched-link" data-bs-toggle="modal" data-bs-target="#avocadoModal">View Recipe</a>
+</div>
+</div>
+</article> 
+
+<article class="col-md-4 recipe-item" data-tags="quick easy breakfast">
+  <div class="card shadow-sm">
+    <img src="images/honey cinnamn french toast.avif" class="card-img-top" alt="Honey Cinnamon French Toast">
+    <div class="card-body text-center">
+      <h5 class="card-title">Honey Cinnamon French Toast</h5>
+      <p class="card-text small text-muted">Prep: 5 mins | Cook: 10 mins</p>
+      <a href="#frenchToast" class="stretched-link" data-bs-toggle="modal" data-bs-target="#frenchToastModal">View Recipe</a>
+    </div>
+  </div>
+</article>
+
+
+
+</div>
+</section>
+
+
+
+<!-- Modals for Breakfast -->
+<!-- Fluffy Pancakes Modal -->
+<div class="modal fade" id="pancakeModal" tabindex="-1" aria-labelledby="pancakeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="pancakeModalLabel">Fluffy Pancakes</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+        <img src="images/pancake.avif" class="img-fluid mb-3 rounded shadow-sm" alt="Fluffy Pancakes">
+        <p class="text-muted"><strong>Prep:</strong> 10 mins | <strong>Cook:</strong> 15 mins | <strong>Serves:</strong> 2–4</p>
+
+        <h6>Ingredients:</h6>
+        <ul>
+          <li>1 1/2 cups all-purpose flour</li>
+          <li>3 1/2 tsp baking powder</li>
+          <li>1 tbsp sugar</li>
+          <li>1/2 tsp salt</li>
+          <li>1 1/4 cups milk</li>
+          <li>1 egg</li>
+          <li>3 tbsp melted butter</li>
+          <li>1 tsp vanilla extract (optional)</li>
+        </ul>
+
+        <h6>Instructions:</h6>
+        <ol>
+          <li>In a bowl, sift together flour, baking powder, sugar, and salt.</li>
+          <li>Make a well in the center and add milk, egg, melted butter, and vanilla.</li>
+          <li>Mix until smooth, but do not overmix.</li>
+          <li>Heat a lightly oiled pan over medium heat.</li>
+          <li>Pour 1/4 cup of batter for each pancake.</li>
+          <li>Cook until bubbles form on top, then flip and cook 1–2 minutes more until golden.</li>
+          <li>Serve warm with syrup, fruits, or powdered sugar.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Avocado Modal -->
+<div class="modal fade" id="avocadoModal" tabindex="-1">
+<div class="modal-dialog modal-lg modal-dialog-centered">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">Avocado Toast</h5>
+<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+</div>
+<div class="modal-body text-center">
+<img src="images/avocado toast - Copy.avif" class="img-fluid mb-3 rounded shadow" style="max-width:420px;">
+<h4 id="avocadotoast">Avocado Toast</h4>
+<h6>Ingredients:</h6>
+<ul class="text-start">
+<li>2 slices of bread</li>
+<li>1 ripe avocado</li>
+<li>Salt, pepper, chili flakes (optional)</li>
+</ul>
+<h6>Instructions:</h6>
+<p class="text-start">Toast bread. Mash avocado with seasoning. Spread on toast and serve.</p>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Honey Cinnamon French Toast Modal -->
+<div class="modal fade" id="frenchToastModal" tabindex="-1" aria-labelledby="frenchToastModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="frenchToastModalLabel">Honey Cinnamon French Toast</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="images/honey cinnamn french toast.avif" class="img-fluid rounded shadow-sm mb-3" alt="Honey Cinnamon French Toast">
+        <p class="text-muted"><strong>Prep:</strong> 5 mins | <strong>Cook:</strong> 10 mins | <strong>Serves:</strong> 2</p>
+
+        <h6>Ingredients:</h6>
+        <ul>
+          <li>4 slices bread</li>
+          <li>2 eggs</li>
+          <li>½ cup milk</li>
+          <li>1 tbsp sugar</li>
+          <li>1 tsp cinnamon</li>
+          <li>½ tsp vanilla extract</li>
+          <li>1 tbsp butter</li>
+          <li>Honey for drizzle</li>
+          <li>Fresh fruits (optional)</li>
+        </ul>
+
+        <h6>Instructions:</h6>
+        <ol>
+          <li>Whisk eggs, milk, sugar, cinnamon, and vanilla in a bowl.</li>
+          <li>Dip bread slices into mixture, soaking both sides.</li>
+          <li>Heat butter in a pan over medium heat.</li>
+          <li>Fry bread slices 2–3 minutes per side until golden brown.</li>
+          <li>Serve with honey drizzle and optional fruits.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<footer class="bg-charcoal text-white text-center py-4 mt-4">
+<div class="container">
+<p class="mb-0">&copy; 2025 Glow's Kitchen</p>
+</div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="scripts/category.js"></script>
+</body>
+</html>
+
+

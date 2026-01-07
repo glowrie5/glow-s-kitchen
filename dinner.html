@@ -1,0 +1,218 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dinner Menu - Glow's Kitchen</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light shadow-sm py-3">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Glow's Kitchen</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="breakfast.html">Breakfast</a></li>
+          <li class="nav-item"><a class="nav-link" href="lunch.html">Lunch</a></li>
+          <li class="nav-item"><a class="nav-link active" href="dinner.html">Dinner</a></li>
+          <li class="nav-item"><a class="nav-link" href="dessert.html">Dessert</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="category-hero py-5 text-white">
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb bg-transparent p-0 mb-2">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Dinner</li>
+        </ol>
+      </nav>
+      <div class="d-flex align-items-center justify-content-between">
+        <div>
+          <h1 class="fw-bold">Dinner</h1>
+          <p class="lead mb-0">Comforting dinners for evenings and gatherings.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="container py-3">
+    <div id="recipeGridDinner" class="row g-4">
+
+      <!-- Spaghetti -->
+      <article class="col-md-4 recipe-item" id="spaghetti" data-tags="meat comfort">
+        <div class="card shadow-sm">
+          <img src="images/Spaghetti Bolognese.avif" class="card-img-top" alt="Spaghetti Bolognese">
+          <div class="card-body text-center">
+            <h5 class="card-title">Spaghetti Bolognese</h5>
+            <p class="card-text small text-muted">Prep: 15 mins | Cook: 1 hr</p>
+            <a href="#spaghetti" class="stretched-link" data-bs-toggle="modal" data-bs-target="#spaghettiModal">View Recipe</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Grilled Chicken -->
+      <article class="col-md-4 recipe-item" data-tags="meat">
+        <div class="card shadow-sm">
+          <img src="images/grilled chicken.avif" class="card-img-top" alt="Grilled Chicken">
+          <div class="card-body text-center">
+            <h5 class="card-title">Grilled Chicken</h5>
+            <p class="card-text small text-muted">Prep: 20 mins | Cook: 30 mins</p>
+            <a href="#grilled" class="stretched-link" data-bs-toggle="modal" data-bs-target="#grilledModal">View Recipe</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Veggie Stir Fry -->
+      <article class="col-md-4 recipe-item" data-tags="vegetarian quick healthy">
+        <div class="card shadow-sm">
+          <img src="images/Vegetable Stir Fry.avif" class="card-img-top" alt="Veg Stir Fry">
+          <div class="card-body text-center">
+            <h5 class="card-title">Vegetable Stir Fry</h5>
+            <p class="card-text small text-muted">Prep: 10 mins | Cook: 10 mins</p>
+            <a href="#stirfry" class="stretched-link" data-bs-toggle="modal" data-bs-target="#stirfryModal">View Recipe</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- Dinner Modals -->
+  <div class="modal fade" id="spaghettiModal" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Spaghetti Bolognese</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="images/spaghetti.avif" class="img-fluid mb-3 rounded shadow" style="max-width:480px;">
+          <h4>Spaghetti Bolognese</h4>
+          <p class="text-muted">Prep: 15 mins | Cook: 1 hr | Serves: 4</p>
+          
+       
+        <h6>Ingredients:</h6>
+        <ul>
+          <li>400g spaghetti</li>
+          <li>2 tbsp olive oil</li>
+          <li>1 onion, chopped</li>
+          <li>2 garlic cloves, minced</li>
+          <li>400g ground beef</li>
+          <li>800g canned tomatoes</li>
+          <li>2 tbsp tomato paste</li>
+          <li>1 tsp dried oregano</li>
+          <li>Salt and pepper to taste</li>
+          <li>Fresh basil for garnish</li>
+        </ul>
+
+        <h6>Instructions:</h6>
+        <ol>
+          <li>Cook spaghetti according to package instructions. Drain and set aside.</li>
+          <li>Heat olive oil in a pan and sauté onions and garlic until translucent.</li>
+          <li>Add ground beef and cook until browned.</li>
+          <li>Stir in canned tomatoes, tomato paste, and oregano. Simmer for 40–45 mins.</li>
+          <li>Season with salt and pepper.</li>
+          <li>Serve sauce over spaghetti and garnish with fresh basil.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Grilled Modal -->
+  <div class="modal fade" id="grilledModal" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Grilled Chicken</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="images/grilledchicken.avif" class="img-fluid mb-3 rounded shadow" style="max-width:420px;">
+          <h4>Grilled Chicken</h4>
+         
+        <h6>Ingredients:</h6>
+        <ul>
+          <li>2 chicken breasts or thighs</li>
+          <li>2 tbsp olive oil</li>
+          <li>1 tsp paprika</li>
+          <li>1 tsp garlic powder</li>
+          <li>1 tsp dried thyme or rosemary</li>
+          <li>Salt and pepper to taste</li>
+          <li>Optional: lemon wedges for serving</li>
+        </ul>
+
+        <h6>Instructions:</h6>
+        <ol>
+          <li>Preheat grill or grill pan to medium-high heat.</li>
+          <li>Rub chicken with olive oil, paprika, garlic powder, thyme, salt, and pepper.</li>
+          <li>Grill chicken for 5–7 minutes per side until fully cooked and internal temperature reaches 75°C (165°F).</li>
+          <li>Remove from heat and let rest for 5 minutes.</li>
+          <li>Serve hot with lemon wedges and your choice of sides.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Stir Fry Modal -->
+  <div class="modal fade" id="stirfryModal" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Vegetable Stir Fry</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="images/Vegetable Stir Fry.avif" class="img-fluid mb-3 rounded shadow" style="max-width:420px;">
+          <h4>Vegetable Stir Fry</h4>
+         
+        <h6>Ingredients:</h6>
+        <ul>
+          <li>1 cup broccoli florets</li>
+          <li>1 cup bell peppers, sliced</li>
+          <li>1 carrot, thinly sliced</li>
+          <li>1/2 cup snap peas or green beans</li>
+          <li>2 tbsp soy sauce</li>
+          <li>1 tbsp olive oil or sesame oil</li>
+          <li>2 garlic cloves, minced</li>
+          <li>1 tsp grated ginger (optional)</li>
+          <li>Salt and pepper to taste</li>
+        </ul>
+
+        <h6>Instructions:</h6>
+        <ol>
+          <li>Heat oil in a large pan or wok over medium-high heat.</li>
+          <li>Add garlic and ginger; sauté for 30 seconds until fragrant.</li>
+          <li>Add all vegetables and stir-fry for 5–7 minutes until tender-crisp.</li>
+          <li>Drizzle with soy sauce and season with salt and pepper.</li>
+          <li>Toss well and cook for another 1–2 minutes.</li>
+          <li>Serve hot as a side dish or over rice/noodles for a complete meal.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <footer class="bg-charcoal text-white text-center py-4 mt-4">
+    <div class="container">
+      <p class="mb-0">&copy; 2025 Glow's Kitchen</p>
+    </div>
+  </footer>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="scripts/category.js"></script>
+</body>
+</html>
